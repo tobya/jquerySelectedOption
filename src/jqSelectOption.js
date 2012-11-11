@@ -7,7 +7,7 @@
  *
  * Simple jQuery Script to set the initial item of a select easily.
  *
- * <select name="myselect" SelectedOption="Value2">
+ * <select name="myselect" data_SelectedOption="Value2">
  *   <option value="Value1"> Value 1 </Option>
  *   <option value="Value2"> Value 2 </Option>
  * </select>
@@ -29,10 +29,19 @@
 
 //get all selects in document and set value to initial Attribute.
 //Simple include the file and it will run.
+//Call jQuery().SelectedOptions() if needs to be run again.
+
+
+jQuery.fn.SelectOptions = function(){
+
+  jQuery('Select').each(function(){
+    var sel = jQuery(this);
+    sel.val(sel.attr('data_SelectedOption'));
+  })
+
+};
+
 jQuery('Document').ready(function(){
-    jQuery('Select').each(function(){
-          var sel = jQuery(this);
-          sel.val(sel.attr('SelectedOption'));
-  });
+  jQuery().SelectOptions();
 });
 
