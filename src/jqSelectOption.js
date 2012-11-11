@@ -7,7 +7,7 @@
  *
  * Simple jQuery Script to set the initial item of a select easily.
  *
- * <select name="myselect" initial="Value2">
+ * <select name="myselect" SelectedOption="Value2">
  *   <option value="Value1"> Value 1 </Option>
  *   <option value="Value2"> Value 2 </Option>
  * </select>
