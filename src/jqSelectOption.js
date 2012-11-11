@@ -36,7 +36,11 @@ jQuery.fn.SelectOptions = function(){
 
    jQuery('Select').each(function(){
     var sel = jQuery(this);
-    sel.val(sel.attr('data_SelectedOption'));
+    var selval = sel.attr('data_SelectedOption');
+     //If data_SelectedOption has not been provided don't set.
+     if (selval !== undefined){
+         sel.val(selval);
+     }
   });
 
   return this;
