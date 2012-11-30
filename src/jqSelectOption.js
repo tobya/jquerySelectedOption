@@ -32,9 +32,25 @@
 //Call jQuery().SelectedOptions() if needs to be run again.
 
 
-jQuery.fn.SelectOptions = function(){
+jQuery.fn.SelectOptions = function(inoptions){
 
-   jQuery('Select').each(function(){
+		var defaults = {
+				selector : 'Select'
+			};
+		
+		//Decode type of inoptions
+		if (jQuery.isPlainObject(inoptions))
+		{		
+			var options = jQuery.extend(defaults, inoptions)		
+		}
+		else if(inoptions == undefined){
+			var options = defaults;
+		}
+		else {
+			var options = {'selector' : inoptions}
+		}
+		
+   jQuery(options.selector).each(function(){
     var sel = jQuery(this);
     var selval = sel.attr('data_SelectedOption');
      //If data_SelectedOption has not been provided don't set.
