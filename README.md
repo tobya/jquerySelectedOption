@@ -11,7 +11,7 @@ Allows all Select Form elements to specify an initial value as a 'data_SelectedO
 <script type="text/javascript">
 //Execute when document is ready.
 jQuery('Document').ready(function(){
-  jQuery().SelectOptions();
+  jQuery('Select').SelectOptions();
 });
 </script>
 
