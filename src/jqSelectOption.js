@@ -47,8 +47,5 @@ jQuery.fn.SelectOptions = function(){
 
 };
 
-//Execute when document is ready.
-jQuery('Document').ready(function(){
-  jQuery().SelectOptions();
-});
+
 
