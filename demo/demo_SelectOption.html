@@ -23,7 +23,7 @@
         </select>
   </p>
   <p>Select Item 2 (Tomato) as Default</p>
-  <p>    <select name="select2"  data_SelectedOption="Tomato" >
+  <p>    <select name="select2" id="select2" data_SelectedOption="Tomato" >
     <option value="Cucumber">Cucumber</option>
     <option value="Tomato">Tomato</option>
     <option value="SpringOnion">Spring Onions</option>
@@ -32,13 +32,25 @@
         </select>
       
 
-      </p>
+
+  </p>
+
+    <p>Select Item 5 (Pie) as Default</p>
+    <p>    <select name="select3" id="select3" class="SetSelect" data_SelectedOption="Pie" >
+        <option value="Tart">Tart</option>
+        <option value="Flan">Flan</option>
+        <option value="Soup">Soup</option>
+        <option value="Souffle">Souffle</option>
+        <option value="Pie">Pie</option>
+    </select>
 </form>
 <script type="text/javascript">
 //Execute when document is ready.
 jQuery('Document').ready(function(){
-  jQuery().SelectOptions();
+  jQuery('Select').SelectOptions();
 });
 </script>
+
+
 </body>
 </html>

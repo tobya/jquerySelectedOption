@@ -49,8 +49,15 @@ jQuery.fn.SelectOptions = function(inoptions){
 		else {
 			var options = {'selector' : inoptions}
 		}
-		
-   jQuery(options.selector).each(function(){
+
+    //If selector has been passed use this, otherwise call selector first.
+    if (this.selector.toString() == ""){
+      var useThis = jQuery(options.selector);
+    }else{
+       var useThis = this;
+    }
+
+   useThis.each(function(){
     var sel = jQuery(this);
     var selval = sel.attr('data_SelectedOption');
      //If data_SelectedOption has not been provided don't set.
