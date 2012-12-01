@@ -19,4 +19,4 @@ jQuery('Document').ready(function(){
 ````
 
 
- Demo <a href="demo/demo_SelectedOption.html">Demo</a>
+ Demo <a href="http://jsbin.com/unevuw/1/">Demo</a>
