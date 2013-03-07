@@ -27,9 +27,8 @@
 
 
 
-//get all selects in document and set value to initial Attribute.
-//Simple include the file and it will run.
-//Call jQuery().SelectedOptions() if needs to be run again.
+
+//Call jQuery('select').SelectedOptions() to run on all select elements on the page.
 
 
 jQuery.fn.SelectOptions = function(inoptions){
