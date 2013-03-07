@@ -1,9 +1,5 @@
-jqtfm
-=====
-
-A Collection of my jQuery Scripts
-
-**SelectOption**
+SelectedOption
+============
 
 Allows all Select Form elements to specify an initial value as a 'data_SelectedOption' attribute on the select tag.
 
@@ -11,7 +7,7 @@ Allows all Select Form elements to specify an initial value as a 'data_SelectedO
 <script type="text/javascript">
 //Execute when document is ready.
 jQuery('Document').ready(function(){
-  jQuery('Select').SelectOptions();
+  jQuery('Select').SelectedOption();
 });
 </script>
 
@@ -19,4 +15,4 @@ jQuery('Document').ready(function(){
 ````
 
 
- Demo <a href="http://jsbin.com/unevuw/1/">Demo</a>
+<a href="https://github.com/tobya/jquerySelectedOption/blob/gh-pages/demo/demo.html">Demo</a>
