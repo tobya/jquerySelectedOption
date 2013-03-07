@@ -1,7 +1,7 @@
 {
     "name": "SelectedOption",
     "title": "Selected Option",
-    "description": "Very simple jQuery plugin to select a Select Option based on  data_SelectedOption",
+    "description": "Very simple jQuery plugin to select a Select Option based on  the value given to data_SelectedOption on the Select element",
     "keywords": [
         "select"
     ],
