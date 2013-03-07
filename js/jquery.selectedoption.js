@@ -28,10 +28,10 @@
 
 
 
-//Call jQuery('select').SelectedOptions() to run on all select elements on the page.
+//Call jQuery('select').SelectedOption() to run on all select elements on the page.
 
 
-jQuery.fn.SelectOptions = function(inoptions){
+jQuery.fn.SelectedOption = function(inoptions){
 
 		var defaults = {
 				selector : 'Select'
