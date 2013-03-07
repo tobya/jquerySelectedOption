@@ -11,7 +11,7 @@
 <h1>Demo of SelectOption
 </h1>
 <p><a href="http://github.com/tobya/">Github/Tobya</a></p>
-<p>Select Item 3 as Default </p>
+<p>Select Item 3 (Pear) as Default </p>
 <form name="form1" method="post" action="">
   <p>
     <select name="select"  data_SelectedOption="3">
@@ -40,6 +40,16 @@
         <option value="Tart">Tart</option>
         <option value="Flan">Flan</option>
         <option value="Soup">Soup</option>
+        <option value="Souffle">Souffle</option>
+        <option value="Pie">Pie</option>
+    </select>
+
+    <P>HTML Selected Value overrides SelectedOption data value</P>
+    <p>Select Item 2 (Flan) SelectedOption but Soup html selected</p>
+    <p>    <select name="select3" id="select3" class="SetSelect" data_SelectedOption="Flan" >
+        <option value="Tart">Tart</option>
+        <option value="Flan">Flan</option>
+        <option value="Soup" selected >Soup</option>
         <option value="Souffle">Souffle</option>
         <option value="Pie">Pie</option>
     </select>
