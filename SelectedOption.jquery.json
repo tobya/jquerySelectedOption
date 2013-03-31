@@ -2,7 +2,6 @@
     "name": "SelectedOption",
     "title": "Selected Option",
     "description": "<p>A very simple&nbsp;plugin that allows you to specify and select a default option in a select input based on a <em>data_selectedOption</em> attribute. &nbsp;</p><p>By Default will select all &#39;Select&#39; Input elements on page.</p><p>&lt;Select id=Select1 data_SelectedOption=&quot;3&quot;&gt;<br />&lt;option value=1&gt; One<br />&lt;option value=2&gt; Two<br />&lt;option value=3&gt; Three<br />&nbsp;</p><p>&lt;/Select&gt;</p><p>$.SelectedOption();</p>",
-    "Very simple jQuery plugin to select a Select Option based on  the value given to data_SelectedOption on the Select element",
     "keywords": [
         "select"
     ],
