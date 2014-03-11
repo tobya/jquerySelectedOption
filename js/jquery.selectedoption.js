@@ -19,7 +19,7 @@
  *
  * Simple jQuery Script to set the initial item of a select easily.
  *
- * <select name="myselect" data_SelectedOption="Value2">
+ * <select name="myselect" data-SelectedOption="Value2">
  *   <option value="Value1"> Value 1 </Option>
  *   <option value="Value2"> Value 2 </Option>
  * </select>
@@ -58,9 +58,10 @@ jQuery.fn.SelectedOption = function(inoptions){
 
    useThis.each(function(){
     var sel = jQuery(this);
-    var selval = sel.attr('data_SelectedOption');
-     //If data_SelectedOption has not been provided don't set.
+    var selval = sel.data().selectedoption;
+     //If data-SelectedOption has not been provided don't set.
      if (selval !== undefined){
+        console.log(66);
          sel.val(selval);
      }
   });
