@@ -14,7 +14,7 @@
 <p>Select Item 3 (Pear) as Default </p>
 <form name="form1" method="post" action="">
   <p>
-    <select name="select"  data_SelectedOption="3">
+    <select name="select"  data-SelectedOption="3">
       <option value="1">Banana</option>
       <option value="2">Apple</option>
       <option value="3">Pear</option>
@@ -23,7 +23,7 @@
         </select>
   </p>
   <p>Select Item 2 (Tomato) as Default</p>
-  <p>    <select name="select2" id="select2" data_SelectedOption="Tomato" >
+  <p>    <select name="select2" id="select2" data-SelectedOption="Tomato" >
     <option value="Cucumber">Cucumber</option>
     <option value="Tomato">Tomato</option>
     <option value="SpringOnion">Spring Onions</option>
@@ -36,7 +36,7 @@
   </p>
 
     <p>Select Item 5 (Pie) as Default</p>
-    <p>    <select name="select3" id="select3" class="SetSelect" data_SelectedOption="Pie" >
+    <p>    <select name="select3" id="select3" class="SetSelect" data-SelectedOption="Pie" >
         <option value="Tart">Tart</option>
         <option value="Flan">Flan</option>
         <option value="Soup">Soup</option>
@@ -44,9 +44,18 @@
         <option value="Pie">Pie</option>
     </select>
 
+        <p>No Default</p>
+    <p>    <select name="select3" id="select3" class="SetSelect">
+        <option value="Tart">Tart</option>
+        <option value="Flan">Flan</option>
+        <option value="Soup">Soup</option>
+        <option value="Souffle">Souffle</option>
+        <option value="Pie">Pie</option>
+    </select>
+    
     <P>HTML Selected Value is overriden by SelectedOption data value</P>
     <p>Select Item 2 (Flan) SelectedOption but Soup html selected</p>
-    <p>    <select name="select3" id="select3" class="SetSelect" data_SelectedOption="Flan" >
+    <p>    <select name="select3" id="select3" class="SetSelect" data-SelectedOption="Flan" >
         <option value="Tart">Tart</option>
         <option value="Flan">Flan</option>
         <option value="Soup" selected >Soup</option>
