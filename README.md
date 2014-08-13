@@ -1,10 +1,11 @@
 SelectedOption
 ============
 
-Allows all Select Form elements to specify an initial value as a 'data_SelectedOption' attribute on the select tag.
+Allows all Select Form elements to specify an initial value as a 'data-SelectedOption' attribute on the select tag.
+**Note:** select attribute renamed to 'data**-**SelectedOption' instead of 'data**_**SelectedOption (dash instead of underbar) to match HTML5 custom attribute specifications (i.e. now the html will validate).
 
 ````html
-    <select name="select"  data_SelectedOption="3">
+    <select name="select"  data-SelectedOption="3">
       <option value="1">Banana</option>
       <option value="2">Apple</option>
       <option value="3">Pear</option>
