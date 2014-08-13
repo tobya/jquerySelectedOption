@@ -15,7 +15,7 @@
  * User: tobya Toby@toflidium.com
  * Date: 11/11/12
  * Time: 14:03
- * url: http://github.com/tobya/jqtfm
+ * url: http://github.com/tobya/jquerySelectedOption
  *
  * Simple jQuery Script to set the initial item of a select easily.
  *
@@ -61,7 +61,6 @@ jQuery.fn.SelectedOption = function(inoptions){
     var selval = sel.data().selectedoption;
      //If data-SelectedOption has not been provided don't set.
      if (selval !== undefined){
-        console.log(66);
          sel.val(selval);
      }
   });
