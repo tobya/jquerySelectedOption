@@ -4,7 +4,7 @@ SelectedOption
 Allows all Select Form elements to specify an initial value as a 'data-SelectedOption' attribute on the select tag.
 
 
-**Note:** select attribute renamed to 'data**-**SelectedOption' instead of 'data**_**SelectedOption (dash instead of underbar) to match HTML5 custom attribute specifications (i.e. now the html will validate).
+**Note:** select attribute renamed to **'data-SelectedOption' instead of 'data_SelectedOption** (dash instead of underbar) to match HTML5 custom attribute specifications (i.e. now the html will validate).
 
 html
 
