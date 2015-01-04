@@ -32,4 +32,4 @@ javascript
 Option 3 Pear will be selected.
 
 
-<a href="https://github.com/tobya/jquerySelectedOption/blob/gh-pages/demo/demo.html">Demo</a>
+<a href="http://tobya.github.io/jquerySelectedOption/demo/demo.html">Demo</a>
