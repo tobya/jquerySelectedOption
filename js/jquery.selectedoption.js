@@ -33,6 +33,7 @@
 
 jQuery.fn.SelectedOption = function(inoptions){
 
+        /*If no selector provided, select all Select inputs on page*/
 		var defaults = {
 				selector : 'Select'
 			};
@@ -56,14 +57,21 @@ jQuery.fn.SelectedOption = function(inoptions){
        var useThis = this;
     }
 
+    //iternate over every found select input control on page.
    useThis.each(function(){
-    var sel = jQuery(this);
-    var selval = sel.data().selectedoption;
-     //If data-SelectedOption has not been provided don't set.
-     if (selval !== undefined){
-         sel.val(selval);
-     }
-  });
+
+            var sel = jQuery(this);
+            var selval = sel.data().selectedoption;
+             //If data-SelectedOption has not been provided don't set.
+             if (selval !== undefined){
+                 sel.val(selval);
+             }
+
+             //if no-script item exists remove it.
+             $('#'+ sel.attr('id') + " option[value='noscript-item']").remove();
+
+
+        });
 
   return this;
 
