@@ -68,8 +68,8 @@ jQuery.fn.SelectedOption = function(inoptions){
              }
 
              //if no-script item exists remove it.
-             $('#'+ sel.attr('id') + " option[value='noscript-item']").remove();
-
+             $('#'+ sel.attr('id') + " [data-noscriptitem]").remove();
+           
 
         });
 

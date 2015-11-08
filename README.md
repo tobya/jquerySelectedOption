@@ -9,6 +9,7 @@ Allows all Select Form elements to specify an initial value as a 'data-SelectedO
 html
 
     <select name="select"  data-SelectedOption="3">
+      <option value="ERROR" data-noscriptitem>ERROR: If you see this an error has occured</option>
       <option value="1">Banana</option>
       <option value="2">Apple</option>
       <option value="3">Pear</option>

@@ -1,11 +1,11 @@
 {
     "name": "SelectedOption",
     "title": "Selected Option",
-    "description": "<p>A very simple&nbsp;plugin that allows you to specify and select a default option in a select input based on a <em>data-selectedOption</em> attribute. &nbsp;</p><p>By Default will select all &#39;Select&#39; Input elements on page.</p><p>&lt;Select id=Select1 data-SelectedOption=&quot;3&quot;&gt;<br />&lt;option value=1&gt; One<br />&lt;option value=2&gt; Two<br />&lt;option value=3&gt; Three<br />&nbsp;</p><p>&lt;/Select&gt;</p><p>$.SelectedOption();</p>",
+    "description": "A very simple&nbsp;plugin that allows you to specify and select a default option in a select input based on a data-selectedOption attribute. By Default will select all &#39;Select&#39; Input elements on page.</p><p>&lt;Select id=Select1 data-SelectedOption=&quot;3&quot;&gt;<br />&lt;option value=1&gt; One<br />&lt;option value=2&gt; Two<br />&lt;option value=3&gt; Three<br />&nbsp;</p><p>&lt;/Select&gt;</p><p>$.SelectedOption();</p>",
     "keywords": [
         "select"
     ],
-    "version": "0.1.7",
+    "version": "0.1.8",
     "author": {
         "name": "Toby Allen",
         "email": "toby@toflidium.com",

@@ -65,10 +65,10 @@
 
 
 
-    <P>Provide an option that will be shown if script does not run</P>
+    <P>Provide an option that will be shown if script does not run. assign the data-noscriptitem value to ensure it's removal.</P>
     <p>Item should not appear</p>
     <p>    <select name="select-noscript" id="select-noscript" class="SetSelect"  >
-        <option value="noscript-item" >Incorrect Value, Script not run</option>
+        <option value="noscript-item" data-noscriptitem  >ERROR: Incorrect Value, Script not run</option>
         <option value="Tart">Tart</option>
         <option value="Flan">Flan</option>
         <option value="Soup"  >Soup</option>
@@ -77,10 +77,10 @@
     </select>
 
         <P>Provide an option that will be shown if script does not run</P>
-    <p>Incorrect Value (value) means option is not removed. </p>
+    <p>No data-noscriptitem attribute means option is not removed. </p>
     <p>    
     <select name="select-noscript" id="select-noscript2" class="SetSelect"  >
-        <option value="noscript-item2" >Incorrect Value, Script not run</option>
+        <option value="noscript-item2" >ERROR: Incorrect Value, Script not run</option>
         <option value="Tart">Tart</option>
         <option value="Flan">Flan</option>
         <option value="Soup"  >Soup</option>
