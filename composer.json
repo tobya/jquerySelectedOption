@@ -1,0 +1,16 @@
+{
+    "name": "tobya/jquerySelectedOption",
+    "type": "library",
+    "description": "Simple Combo box selected item chooser",
+    "keywords": ["Combobox","Select","jquery"],
+    "homepage": "https://github.com/tobya/jquerySelectedOption",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toby Allen",
+            "homepage": "https://github.com/tobya"
+        }
+    ]
+    
+    
+}
