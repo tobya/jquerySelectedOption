@@ -21,10 +21,12 @@ html
 javascript
 
     <script type="text/javascript">
-    //Execute when document is ready.
-    jQuery('Document').ready(function(){
-    jQuery('Select').SelectedOption();
-    });
+    
+      $('Document').ready(function(){
+      
+            $('Select').SelectedOption();
+      
+        });
     </script>
 
 
