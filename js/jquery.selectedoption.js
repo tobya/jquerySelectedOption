@@ -34,21 +34,21 @@
 jQuery.fn.SelectedOption = function(inoptions){
 
         /*If no selector provided, select all Select inputs on page*/
-		var defaults = {
-				selector : 'Select'
-			};
-		
-		//Decode type of inoptions
-		if (jQuery.isPlainObject(inoptions))
-		{		
-			var options = jQuery.extend(defaults, inoptions)		
-		}
-		else if(inoptions == undefined){
-			var options = defaults;
-		}
-		else {
-			var options = {'selector' : inoptions}
-		}
+    var defaults = {
+        selector : 'Select'
+      };
+    
+    //Decode type of inoptions
+    if (jQuery.isPlainObject(inoptions))
+    {   
+      var options = jQuery.extend(defaults, inoptions)    
+    }
+    else if(inoptions == undefined){
+      var options = defaults;
+    }
+    else {
+      var options = {'selector' : inoptions}
+    }
 
     //If selector has been passed use this, otherwise call selector first.
     if (this.selector.toString() == ""){
@@ -62,10 +62,13 @@ jQuery.fn.SelectedOption = function(inoptions){
 
             var sel = jQuery(this);
             var selval = sel.data().selectedoption;
-             //If data-SelectedOption has not been provided don't set.
-             if (selval !== undefined){
-                 sel.val(selval);
-             }
+             //Only Set value If data-SelectedOption has been provided and is not an empty string.
+             if (!selval !== undefined ){
+                if ( selval.length !== 0){
+                    sel.val(selval);               
+               } 
+
+             } 
 
              //if no-script item exists remove it.
              $('#'+ sel.attr('id') + " [data-noscriptitem]").remove();
