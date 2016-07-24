@@ -63,7 +63,7 @@ jQuery.fn.SelectedOption = function(inoptions){
             var sel = jQuery(this);
             var selval = sel.data().selectedoption;
              //Only Set value If data-SelectedOption has been provided and is not an empty string.
-             if (!selval !== undefined ){
+             if (selval !== undefined ){
                 if ( selval.length !== 0){
                     sel.val(selval);               
                } 
@@ -79,6 +79,5 @@ jQuery.fn.SelectedOption = function(inoptions){
   return this;
 
 };
-
 
 
