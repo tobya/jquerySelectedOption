@@ -23,17 +23,15 @@
  *   <option value="Value1"> Value 1 </Option>
  *   <option value="Value2"> Value 2 </Option>
  * </select>
- */
-
-
-
-
-//Call jQuery('select').SelectedOption() to run on all select elements on the page.
+ *
+ * Usage
+ * Call $('select').SelectedOption() to run on all select elements on the page.
+*/
 
 
 jQuery.fn.SelectedOption = function(inoptions){
 
-        /*If no selector provided, select all Select inputs on page*/
+    /*If no selector provided, select all Select inputs on page*/
     var defaults = {
         selector : 'Select'
       };
