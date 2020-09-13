@@ -49,7 +49,7 @@ jQuery.fn.SelectedOption = function(inoptions){
     }
 
     //If selector has been passed use this, otherwise call selector first.
-    if (this.selector.toString() == ""){
+    if (this.selector == undefined){
       var useThis = jQuery(options.selector);
     }else{
        var useThis = this;
